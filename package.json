@@ -4,6 +4,7 @@
   "description": "socket connection measurement",
   "main": "index.js",
   "scripts": {
+    "test": "mocha --timeout 20000 src/tests/**/*.test.ts",
     "start:dev": "ts-node-dev src/index.ts",
     "start:prod": "node build/index.js",
     "build": "rimraf ./build && tsc"
@@ -17,8 +18,12 @@
     "ws": "^8.12.0"
   },
   "devDependencies": {
+    "@types/chai": "^4.3.4",
+    "@types/mocha": "^10.0.1",
     "@types/node": "^18.11.18",
     "@types/ws": "^8.5.4",
+    "chai": "^4.3.7",
+    "mocha": "^10.2.0",
     "ts-node-dev": "^2.0.0"
   }
 }

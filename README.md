@@ -31,3 +31,9 @@ A Node.js application to connect to binance web socket with three different even
   ```sh
   npm run start:dev trade true
   ```
+
+- run test
+
+```sh
+npm test
+```
